@@ -1,71 +1,388 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="Photo.jpg"  />
-
-  <!-- Primary Meta Tags -->
-  <title>Arif Mustofa - Freelancer Editor</title>
-  <meta name="title" content="Arif Mustofa - Freelancer Editor" />
-  <meta name="description" content="Saya Arif Mustofa, seorang pekerja industri kreatif dengan keahlian ganda sebagai Editor Video yang teliti dan Kreator Konten Media Sosial yang strategis.  Lihat portofolio dan kontak saya di sini." />
-  <meta name="keywords" content="Arif, Arif Mustofa, Freelancer Editor, Portofolio Arif, Visual Arif" />
-  <meta name="google-site-verification" content="ZYNfZwMUiNwSMF3EMvY85bid2BVvB12uMMRfUNWw75A" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="theme-color" content="#030014" />
-  <meta name="msapplication-navbutton-color" content="#030014" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://eki.my.id/" />
-  <meta property="og:title" content="Arif Mustofa - Freelancer Editor" />
-  <meta property="og:description" content="Portofolio Arif Mustofa – seorang pekerja industri kreatif dengan keahlian ganda sebagai Editor Video yang teliti dan Kreator Konten Media Sosial yang strategis." />
-  <meta property="og:image" content="https://eki.my.id/Meta.png" />
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="https://lynk.id/masarifdong/" />
-  <meta name="twitter:title" content="Arif Mustofa - Freelancer Editor" />
-  <meta name="twitter:description" content="Portofolio Arif Mustofa – seorang pekerja industri kreatif dengan keahlian ganda sebagai Editor Video yang teliti dan Kreator Konten Media Sosial yang strategis." />
-  <meta name="twitter:image" content="https://eki.my.id/Meta.png" />
-
-  <!-- Structured Data JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "SiteNavigationElement",
-        "name": "Home",
-        "url": "https://www.eki.my.id/#Home"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": "About",
-        "url": "https://www.eki.my.id/#About"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": "Portofolio",
-        "url": "https://www.eki.my.id/#Portofolio"
-      },
-      {
-        "@type": "SiteNavigationElement",
-        "name": "Contact",
-        "url": "https://www.eki.my.id/#Contact"
-      }
-    ]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arif Mustofa - Profesional Video Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
 </head>
+<body class="font-poppins bg-gray-50">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-blue-800 to-purple-600 text-white py-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Arif Mustofa</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6">Profesional Video Editor</h2>
+                <p class="text-lg mb-8">Mengubah ide kreatif Anda menjadi visual yang memukau selama 5 tahun terakhir Platform di Sribu.com & Upwork.com</p>
+                <div class="flex space-x-4">
+                    <a href="#kontak" class="bg-white text-blue-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition duration-300">Hubungi Saya</a>
+                    <a href="#portofolio" class="border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-800 transition duration-300">Lihat Portofolio</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="https://scontent.fsub32-2.fna.fbcdn.net/v/t39.30808-6/494427548_1794080204486797_632817679388703363_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHW4xmIY_unltinVObyS7pqQ5CpeP_cM-tDkKl4_9wz63YnaSpPSwuz7Q4SrpD33CHuz2IOX5FdUqrOrymturCb&_nc_ohc=tLsGh21aFDgQ7kNvwE6N7sz&_nc_oc=AdmIt75XQ5EEwsJCe5ObkS-gB719AT1cUY90vl3FjpawEYo-T9JzprNnECUAcW_HzBM&_nc_zt=23&_nc_ht=scontent.fsub32-2.fna&_nc_gid=vLoYMjDrJCsBW_NJn3WL_A&oh=00_AfcNHfoAbNyRSozDXGcynhAhgT02v-O9_dn7ZdmawW9Ggg&oe=68FED8C9" alt="Arif Mustofa" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-white shadow-xl">
+                    <div class="absolute -bottom-4 -right-4 bg-white text-blue-800 px-4 py-2 rounded-lg font-bold shadow-lg">
+                        <span class="flex items-center">
+                            <i data-feather="award" class="mr-2"></i> 5+ Tahun Pengalaman
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  
+    <!-- Tentang Saya -->
+    <section id="tentang" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Tentang Saya</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-10">
+                    <p class="text-lg text-gray-700 mb-4">
+                        Halo! Saya Arif Mustofa, seorang video editor profesional dengan pengalaman lebih dari 5 tahun di platform Sribu.com dan Upwork.com. Saya berspesialisasi dalam editing video iklan, konten YouTube, video perusahaan, dan video pernikahan.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-4">
+                        Dengan ratusan proyek yang telah diselesaikan, saya bangga bisa membantu klien dari berbagai industri untuk menceritakan kisah mereka melalui visual yang menarik dan profesional.
+                    </p>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+                            <i data-feather="film" class="mr-2 text-blue-600"></i>
+                            <span>Adobe Premiere Pro</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+                            <i data-feather="activity" class="mr-2 text-blue-600"></i>
+                            <span>After Effects</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+                            <i data-feather="camera" class="mr-2 text-blue-600"></i>
+                            <span>DaVinci Resolve</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-4 py-2 rounded-lg">
+                            <i data-feather="image" class="mr-2 text-blue-600"></i>
+                            <span>Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-100 p-6 rounded-xl">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-800">Keahlian Saya</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Editing Video</span>
+                                    <span class="text-gray-600">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Motion Graphics</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Color Grading</span>
+                                    <span class="text-gray-600">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span class="text-gray-700">Sound Editing</span>
+                                    <span class="text-gray-600">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-300 rounded-full h-2">
+                                    <div class="bg-blue-600 h-2 rounded-full" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  </body>
+    <!-- Portofolio -->
+    <section id="portofolio" class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Hasil Karya</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://i.ytimg.com/vi/HcFnbNBBrdo/maxresdefault.jpg" alt="Video Iklan Produk" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="https://drive.google.com/file/d/1ghW4tPyKXthoLGL75KUUnag1fRpkEw6F/view?usp=drive_link" target="_blank" class="bg-white text-blue-800 px-4 py-2 rounded-lg font-medium">Lihat Video</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Video Iklan Makanan</h3>
+                        <p class="text-gray-600 mb-4">Video iklan produk makanan dengan efek khusus dan transisi smooth.</p>
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <span class="text-gray-600 ml-2">(5.0)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://www.vietnamworks.com/hrinsider/wp-content/uploads/2023/04/Content-Creator-la-gi.jpg" alt="Video Tugas Kuliah" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="https://drive.google.com/file/d/1AL5AzZC15FW4OAzSmpeV9IkbcxKpf-L7/view?usp=drive_link" target="_blank" class="bg-white text-blue-800 px-4 py-2 rounded-lg font-medium">Lihat Video</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Video Profil Mata Kuliah</h3>
+                        <p class="text-gray-600 mb-4">Video profile Mata Kuliah berbasis Ai dengan motion graphics custom.</p>
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current text-gray-300"></i>
+                            <span class="text-gray-600 ml-2">(4.8)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="relative">
+                        <img src="https://wallpapercave.com/wp/wp6922246.jpg" alt="Video Street Fotograph" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition duration-300">
+                            <a href="https://drive.google.com/file/d/1B9OCEPy4TaYXF_O6ocMc3qFS0RZLY4ny/view?usp=drive_link" target="_blank" class="bg-white text-blue-800 px-4 py-2 rounded-lg font-medium">Lihat Video</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Highlight Videografi Aesthetic</h3>
+                        <p class="text-gray-600 mb-4">Video highlight videografi dengan color grading cinematic dan musik romantis.</p>
+                        <div class="flex items-center text-yellow-400">
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current"></i>
+                            <i data-feather="star" class="fill-current text-gray-300"></i>
+                            <span class="text-gray-600 ml-2">(4.5)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition duration-300">
+                    Lihat Lebih Banyak Proyek
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="py-16 px-4 bg-gradient-to-r from-blue-800 to-purple-600 text-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Testimoni Klien</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimoni 1 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/10" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Sarah Wijaya</h4>
+                            <p class="text-blue-200">Pemilik Brand Skincare</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2 text-yellow-400">
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                    </div>
+                    <p class="text-blue-100">
+                        "Video iklan yang dibuat Arif sangat profesional dan meningkatkan penjualan kami sebesar 30%! Dia sangat detail dan komunikatif selama proses pengerjaan."
+                    </p>
+                </div>
+
+                <!-- Testimoni 2 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/office/200x200/20" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Budi Santoso</h4>
+                            <p class="text-blue-200">Owner Kue Lapis Jogja</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2 text-yellow-400">
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                    </div>
+                    <p class="text-blue-100">
+                        "Video Promosi saya yang dibuat sangat memukau! Arif memahami visi kami dan menerjemahkannya dengan sempurna ke dalam visual yang profesional dan kreatif."
+                    </p>
+                </div>
+
+                <!-- Testimoni 3 -->
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl backdrop-blur-sm">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/30" alt="Client" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-semibold">Rina Dewi</h4>
+                            <p class="text-blue-200">Content Creator</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-2 text-yellow-400">
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current text-gray-400"></i>
+                    </div>
+                    <p class="text-blue-100">
+                        "Editing video YouTube saya selalu ditangani Arif dengan cepat dan hasilnya selalu memuaskan. Sangat recommended untuk konten kreator!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Bekerja Dengan Saya Di</h2>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16">
+                <a href="https://www.sribu.com" target="_blank" class="flex flex-col items-center hover:scale-105 transition duration-300">
+                    <img src="https://voffice.co.id/storage/featured-on/sribu.png" alt="Sribu" class="h-16 object-contain">
+                    <p class="mt-4 text-gray-700">Sribu.com</p>
+                    <div class="flex items-center mt-2 text-yellow-400">
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <span class="text-gray-600 ml-1">(4.9/5.0)</span>
+                    </div>
+                </a>
+                <a href="https://www.upwork.com" target="_blank" class="flex flex-col items-center hover:scale-105 transition duration-300">
+                    <img src="https://www.pngrepo.com/download/331630/upwork.png" alt="Upwork" class="h-16 object-contain">
+                    <p class="mt-4 text-gray-700">Upwork.com</p>
+                    <div class="flex items-center mt-2 text-yellow-400">
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <i data-feather="star" class="fill-current"></i>
+                        <span class="text-gray-600 ml-1">(5.0/5.0)</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Hubungi Saya</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <form class="bg-white p-8 rounded-xl shadow-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 mb-2">Nama Anda</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 mb-2">Pesan</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg h-full">
+                        <h3 class="text-xl font-semibold mb-6 text-gray-800">Info Kontak</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <i data-feather="mail" class="text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Email</h4>
+                                    <a href="mailto:arif.mustofa@example.com" class="text-blue-600 hover:underline">visualcreative151@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <i data-feather="phone" class="text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Telepon/WhatsApp</h4>
+                                    <a href="https://wa.me/6285856202489" class="text-blue-600 hover:underline">+6285-8562-02489</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <i data-feather="instagram" class="text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">Instagram</h4>
+                                    <a href="https://instagram.com/@arif_mustofaa_" target="_blank" class="text-blue-600 hover:underline">Arif Mustofa</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-2 rounded-lg mr-4">
+                                    <i data-feather="youtube" class="text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-700">TikTok</h4>
+                                    <a href="https://tiktok.com/@freelancemuda" target="_blank" class="text-blue-600 hover:underline">Visual Arif</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-700 mb-2">Jam Kerja</h4>
+                            <p class="text-gray-600">Senin - Jumat: 09.00 - 20.00 WIB</p>
+                            <p class="text-gray-600">Sabtu: 09.00 - 15.00 WIB</p>
+                            <p class="text-gray-600">Minggu: Close Bree</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
 </html>
